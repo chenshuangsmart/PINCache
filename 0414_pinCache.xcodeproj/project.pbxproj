@@ -15,6 +15,11 @@
 		40427FD52081FA47002CE615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40427FD42081FA47002CE615 /* main.m */; };
 		40427FDF2081FA47002CE615 /* _414_pinCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40427FDE2081FA47002CE615 /* _414_pinCacheTests.m */; };
 		40427FEA2081FA47002CE615 /* _414_pinCacheUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40427FE92081FA47002CE615 /* _414_pinCacheUITests.m */; };
+		40494F312082E42F00F88A8B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 40494F262082E42E00F88A8B /* LICENSE.txt */; };
+		40494F322082E42F00F88A8B /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494F2A2082E42E00F88A8B /* PINCache.m */; };
+		40494F332082E42F00F88A8B /* PINDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494F2D2082E42E00F88A8B /* PINDiskCache.m */; };
+		40494F342082E42F00F88A8B /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494F2F2082E42E00F88A8B /* PINMemoryCache.m */; };
+		40494F352082E42F00F88A8B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40494F302082E42E00F88A8B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		40427FE52081FA47002CE615 /* 0414_pinCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 0414_pinCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40427FE92081FA47002CE615 /* _414_pinCacheUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _414_pinCacheUITests.m; sourceTree = "<group>"; };
 		40427FEB2081FA47002CE615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40494F262082E42E00F88A8B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		40494F282082E42E00F88A8B /* Nullability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nullability.h; sourceTree = "<group>"; };
+		40494F292082E42E00F88A8B /* PINCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCache.h; sourceTree = "<group>"; };
+		40494F2A2082E42E00F88A8B /* PINCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINCache.m; sourceTree = "<group>"; };
+		40494F2B2082E42E00F88A8B /* PINCacheObjectSubscripting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCacheObjectSubscripting.h; sourceTree = "<group>"; };
+		40494F2C2082E42E00F88A8B /* PINDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINDiskCache.h; sourceTree = "<group>"; };
+		40494F2D2082E42E00F88A8B /* PINDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINDiskCache.m; sourceTree = "<group>"; };
+		40494F2E2082E42E00F88A8B /* PINMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINMemoryCache.h; sourceTree = "<group>"; };
+		40494F2F2082E42E00F88A8B /* PINMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINMemoryCache.m; sourceTree = "<group>"; };
+		40494F302082E42E00F88A8B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		40427FC42081FA47002CE615 /* 0414_pinCache */ = {
 			isa = PBXGroup;
 			children = (
+				40494F252082E42E00F88A8B /* PINCache */,
 				40427FC52081FA47002CE615 /* AppDelegate.h */,
 				40427FC62081FA47002CE615 /* AppDelegate.m */,
 				40427FC82081FA47002CE615 /* ViewController.h */,
@@ -130,6 +146,31 @@
 				40427FEB2081FA47002CE615 /* Info.plist */,
 			);
 			path = 0414_pinCacheUITests;
+			sourceTree = "<group>";
+		};
+		40494F252082E42E00F88A8B /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				40494F262082E42E00F88A8B /* LICENSE.txt */,
+				40494F272082E42E00F88A8B /* PINCache */,
+				40494F302082E42E00F88A8B /* README.md */,
+			);
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		40494F272082E42E00F88A8B /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				40494F282082E42E00F88A8B /* Nullability.h */,
+				40494F292082E42E00F88A8B /* PINCache.h */,
+				40494F2A2082E42E00F88A8B /* PINCache.m */,
+				40494F2B2082E42E00F88A8B /* PINCacheObjectSubscripting.h */,
+				40494F2C2082E42E00F88A8B /* PINDiskCache.h */,
+				40494F2D2082E42E00F88A8B /* PINDiskCache.m */,
+				40494F2E2082E42E00F88A8B /* PINMemoryCache.h */,
+				40494F2F2082E42E00F88A8B /* PINMemoryCache.m */,
+			);
+			path = PINCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40494F312082E42F00F88A8B /* LICENSE.txt in Resources */,
 				40427FD22081FA47002CE615 /* LaunchScreen.storyboard in Resources */,
+				40494F352082E42F00F88A8B /* README.md in Resources */,
 				40427FCF2081FA47002CE615 /* Assets.xcassets in Resources */,
 				40427FCD2081FA47002CE615 /* Main.storyboard in Resources */,
 			);
@@ -265,7 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40494F322082E42F00F88A8B /* PINCache.m in Sources */,
+				40494F342082E42F00F88A8B /* PINMemoryCache.m in Sources */,
 				40427FCA2081FA47002CE615 /* ViewController.m in Sources */,
+				40494F332082E42F00F88A8B /* PINDiskCache.m in Sources */,
 				40427FD52081FA47002CE615 /* main.m in Sources */,
 				40427FC72081FA47002CE615 /* AppDelegate.m in Sources */,
 			);
